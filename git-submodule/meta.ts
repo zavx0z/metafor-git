@@ -9,7 +9,5 @@ export default MetaFor("git-submodule", { desc: "Git submodule — управл�
   .mass({})
   .processes(() => ({}))
   .reactions(() => [])
-  .matter(({ value, html }) => html`
-      <meta-for src="zavx0z/git-submodule-${value.operation}" fields=${{ args: value.args }} />
-    `)
+  .matter()
   .bulk()

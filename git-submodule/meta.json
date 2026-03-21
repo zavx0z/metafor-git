@@ -15,19 +15,5 @@
   },
   "superposition": {},
   "processes": {},
-  "matter": [
-    {
-      "src": {
-        "data": "/value/operation",
-        "expr": "zavx0z/git-submodule-${_[0]}"
-      },
-      "tag": "meta-for",
-      "type": "meta",
-      "fields": {
-        "data": "/value/args",
-        "expr": "{ args: _[0] }"
-      }
-    }
-  ],
   "mass": {}
 }
