@@ -1,0 +1,12 @@
+{
+  "name": "git-error",
+  "fields": {
+    "message": {
+      "type": "string",
+      "label": "Сообщение ошибки"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

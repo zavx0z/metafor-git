@@ -1,0 +1,12 @@
+{
+  "name": "git-history-bisect",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

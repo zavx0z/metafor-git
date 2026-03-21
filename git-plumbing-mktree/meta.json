@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-mktree",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

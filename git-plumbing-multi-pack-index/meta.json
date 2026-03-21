@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-multi-pack-index",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

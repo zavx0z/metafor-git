@@ -1,0 +1,39 @@
+{
+  "name": "git-history",
+  "fields": {
+    "operation": {
+      "type": "enum<string>",
+      "label": "Тип операции",
+      "values": [
+        "switch",
+        "checkout",
+        "commit",
+        "reset",
+        "revert",
+        "bisect",
+        "repair"
+      ]
+    },
+    "args": {
+      "type": "string",
+      "label": "Аргументы"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "matter": [
+    {
+      "src": {
+        "data": "/value/operation",
+        "expr": "zavx0z/git-history-${_[0]}"
+      },
+      "tag": "meta-for",
+      "type": "meta",
+      "fields": {
+        "data": "/value/args",
+        "expr": "{ args: _[0] }"
+      }
+    }
+  ],
+  "mass": {}
+}

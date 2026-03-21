@@ -1,0 +1,12 @@
+{
+  "name": "git-config-help",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

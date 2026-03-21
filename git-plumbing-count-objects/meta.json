@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-count-objects",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

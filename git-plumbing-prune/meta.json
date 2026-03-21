@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-prune",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-fast-import",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

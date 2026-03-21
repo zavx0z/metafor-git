@@ -1,0 +1,12 @@
+{
+  "name": "git-plumbing-check-attr",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

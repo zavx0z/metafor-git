@@ -1,0 +1,36 @@
+{
+  "name": "git-collaborate",
+  "fields": {
+    "operation": {
+      "type": "enum<string>",
+      "label": "Тип операции",
+      "values": [
+        "fetch",
+        "pull",
+        "push",
+        "remote"
+      ]
+    },
+    "args": {
+      "type": "string",
+      "label": "Аргументы"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "matter": [
+    {
+      "src": {
+        "data": "/value/operation",
+        "expr": "zavx0z/git-collaborate-${_[0]}"
+      },
+      "tag": "meta-for",
+      "type": "meta",
+      "fields": {
+        "data": "/value/args",
+        "expr": "{ args: _[0] }"
+      }
+    }
+  ],
+  "mass": {}
+}

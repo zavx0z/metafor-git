@@ -1,0 +1,12 @@
+{
+  "name": "git-work-sparse-checkout",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}

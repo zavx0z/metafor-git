@@ -1,0 +1,14 @@
+{
+  "name": "@zavx0z/git-collaborate-push",
+  "version": "0.1.0",
+  "description": "Git push — команда git",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@metafor/dsl": "workspace:*",
+    "@metafor/ast": "workspace:*"
+  },
+  "scripts": {
+    "build": "metafor-build meta.ts --out meta.json"
+  }
+}

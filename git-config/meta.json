@@ -1,0 +1,34 @@
+{
+  "name": "git-config",
+  "fields": {
+    "operation": {
+      "type": "enum<string>",
+      "label": "Тип операции",
+      "values": [
+        "config",
+        "help"
+      ]
+    },
+    "args": {
+      "type": "string",
+      "label": "Аргументы"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "matter": [
+    {
+      "src": {
+        "data": "/value/operation",
+        "expr": "zavx0z/git-config-${_[0]}"
+      },
+      "tag": "meta-for",
+      "type": "meta",
+      "fields": {
+        "data": "/value/args",
+        "expr": "{ args: _[0] }"
+      }
+    }
+  ],
+  "mass": {}
+}

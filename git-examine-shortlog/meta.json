@@ -1,0 +1,12 @@
+{
+  "name": "git-examine-shortlog",
+  "fields": {
+    "error": {
+      "type": "string",
+      "label": "Ошибка"
+    }
+  },
+  "superposition": {},
+  "processes": {},
+  "mass": {}
+}
