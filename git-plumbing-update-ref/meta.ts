@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-update-ref", { desc: "Git update-ref — к
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -6,7 +6,7 @@ export default MetaFor("git-examine-range-diff", { desc: "Git range-diff — к�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

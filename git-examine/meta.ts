@@ -7,7 +7,7 @@ export default MetaFor("git-examine", { desc: "Git examine — команды п
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(({ value, html }) => html`
       <meta-for src="zavx0z/git-examine-${value.operation}" fields=${{ args: value.args }} />

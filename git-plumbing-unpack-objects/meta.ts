@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-unpack-objects", { desc: "Git unpack-object
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

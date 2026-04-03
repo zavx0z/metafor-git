@@ -6,7 +6,7 @@ export default MetaFor("git-config-help", { desc: "Git help — команда g
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-filter-branch", { desc: "Git filter-branch 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

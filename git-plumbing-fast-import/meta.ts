@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-fast-import", { desc: "Git fast-import — 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

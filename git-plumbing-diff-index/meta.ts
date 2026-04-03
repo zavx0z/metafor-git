@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-diff-index", { desc: "Git diff-index — к
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -7,7 +7,7 @@ export default MetaFor("git-worktree", { desc: "Git worktree — управле�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(({ value, html }) => html`
       <meta-for src="zavx0z/git-worktree-${value.operation}" fields=${{ args: value.args }} />

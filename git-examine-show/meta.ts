@@ -6,7 +6,7 @@ export default MetaFor("git-examine-show", { desc: "Git show — команда 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

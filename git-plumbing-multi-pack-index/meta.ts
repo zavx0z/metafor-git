@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-multi-pack-index", { desc: "Git multi-pack-
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

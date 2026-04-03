@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-fsck", { desc: "Git fsck — команда
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

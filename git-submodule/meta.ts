@@ -7,7 +7,7 @@ export default MetaFor("git-submodule", { desc: "Git submodule — управл�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

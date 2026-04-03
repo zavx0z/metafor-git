@@ -6,7 +6,7 @@ export default MetaFor("git-history-checkout", { desc: "Git checkout — ком�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

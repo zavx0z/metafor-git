@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-check-ignore", { desc: "Git check-ignore â€
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

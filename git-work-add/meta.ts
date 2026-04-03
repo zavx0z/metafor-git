@@ -6,7 +6,7 @@ export default MetaFor("git-work-add", { desc: "Git work-add — команда 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

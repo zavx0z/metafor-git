@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-cat-file", { desc: "Git cat-file — ком
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-symbolic-ref", { desc: "Git symbolic-ref â€
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -7,7 +7,7 @@ export default MetaFor("git-work", { desc: "Git work — команды рабо
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(
     ({ value, html }) => html`

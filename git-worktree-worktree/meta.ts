@@ -6,7 +6,7 @@ export default MetaFor("git-worktree-worktree", { desc: "Git worktree — ком
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

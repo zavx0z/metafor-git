@@ -6,7 +6,7 @@ export default MetaFor("git-stash-stash", { desc: "Git stash — команда 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

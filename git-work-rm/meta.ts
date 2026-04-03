@@ -6,7 +6,7 @@ export default MetaFor("git-work-rm", { desc: "Git work-rm — команда gi
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

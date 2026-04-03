@@ -7,7 +7,7 @@ export default MetaFor("git-start", { desc: "Git start — команды нач
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(
     ({ value, html }) => html`

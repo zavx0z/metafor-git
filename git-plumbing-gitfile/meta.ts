@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-gitfile", { desc: "Git gitfile — кома
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

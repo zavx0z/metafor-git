@@ -6,7 +6,7 @@ export default MetaFor("git-work-clean", { desc: "Git work-clean — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

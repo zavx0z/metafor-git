@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-hash-object", { desc: "Git hash-object — 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

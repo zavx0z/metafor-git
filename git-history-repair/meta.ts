@@ -6,7 +6,7 @@ export default MetaFor("git-history-repair", { desc: "Git repair — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

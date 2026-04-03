@@ -6,7 +6,7 @@ export default MetaFor("git-examine-shortlog", { desc: "Git shortlog — ком�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

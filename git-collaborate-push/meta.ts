@@ -6,7 +6,7 @@ export default MetaFor("git-collaborate-push", { desc: "Git push — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

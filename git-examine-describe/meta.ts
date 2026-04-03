@@ -6,7 +6,7 @@ export default MetaFor("git-examine-describe", { desc: "Git describe — ком�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

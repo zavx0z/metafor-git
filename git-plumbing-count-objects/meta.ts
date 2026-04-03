@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-count-objects", { desc: "Git count-objects 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

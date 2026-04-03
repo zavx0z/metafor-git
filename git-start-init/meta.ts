@@ -6,7 +6,7 @@ export default MetaFor("git-start-init", { desc: "Git start-init — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -11,7 +11,7 @@ export default MetaFor("git-history", {
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(
     ({ value, html }) => html`

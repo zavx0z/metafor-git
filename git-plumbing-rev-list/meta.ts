@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-rev-list", { desc: "Git rev-list — ком
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

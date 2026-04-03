@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-rev-parse", { desc: "Git rev-parse — ко
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

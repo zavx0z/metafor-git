@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-prune", { desc: "Git prune — команд
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

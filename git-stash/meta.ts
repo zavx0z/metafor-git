@@ -7,7 +7,7 @@ export default MetaFor("git-stash", { desc: "Git stash — отложенные 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(({ value, html }) => html`
       <meta-for src="zavx0z/git-stash-${value.operation}" fields=${{ args: value.args }} />

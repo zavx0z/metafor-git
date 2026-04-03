@@ -6,7 +6,7 @@ export default MetaFor("git-error", { desc: "Git error — актор ошибк
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

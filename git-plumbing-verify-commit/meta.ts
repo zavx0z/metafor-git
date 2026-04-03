@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-verify-commit", { desc: "Git verify-commit 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

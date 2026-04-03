@@ -6,7 +6,7 @@ export default MetaFor("git-history-switch", { desc: "Git switch — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

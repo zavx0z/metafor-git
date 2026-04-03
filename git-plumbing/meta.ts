@@ -14,7 +14,7 @@ export default MetaFor("git-plumbing", { desc: "Git plumbing — низкоур�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(({ value, html }) => html`
       <meta-for src="zavx0z/git-plumbing-${value.operation}" fields=${{ args: value.args }} />

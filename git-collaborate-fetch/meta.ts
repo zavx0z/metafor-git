@@ -6,7 +6,7 @@ export default MetaFor("git-collaborate-fetch", { desc: "Git fetch — кома�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

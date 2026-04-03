@@ -6,7 +6,7 @@ export default MetaFor("git-config-config", { desc: "Git config — команд
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

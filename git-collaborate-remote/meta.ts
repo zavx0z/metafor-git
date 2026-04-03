@@ -6,7 +6,7 @@ export default MetaFor("git-collaborate-remote", { desc: "Git remote — ком�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

@@ -6,7 +6,7 @@ export default MetaFor("git-examine-status", { desc: "Git status — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

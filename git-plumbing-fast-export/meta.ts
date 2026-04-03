@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-fast-export", { desc: "Git fast-export — 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

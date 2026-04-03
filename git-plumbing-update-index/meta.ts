@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-update-index", { desc: "Git update-index â€
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

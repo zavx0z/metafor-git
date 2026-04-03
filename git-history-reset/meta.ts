@@ -6,7 +6,7 @@ export default MetaFor("git-history-reset", { desc: "Git reset — команд�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

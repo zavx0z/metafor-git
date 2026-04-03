@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-check-attr", { desc: "Git check-attr — к
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

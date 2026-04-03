@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-reflog", { desc: "Git reflog — коман
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

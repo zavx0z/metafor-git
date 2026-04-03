@@ -6,7 +6,7 @@ export default MetaFor("git-work-sparse-checkout", { desc: "Git work-sparse-chec
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

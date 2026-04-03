@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-verify-tag", { desc: "Git verify-tag — к
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

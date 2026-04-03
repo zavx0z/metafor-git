@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-commit-graph", { desc: "Git commit-graph â€
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

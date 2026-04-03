@@ -6,7 +6,7 @@ export default MetaFor("git-history-revert", { desc: "Git revert — коман�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

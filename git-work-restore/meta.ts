@@ -6,7 +6,7 @@ export default MetaFor("git-work-restore", { desc: "Git work-restore — ком�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

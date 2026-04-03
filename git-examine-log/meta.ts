@@ -6,7 +6,7 @@ export default MetaFor("git-examine-log", { desc: "Git log — команда gi
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

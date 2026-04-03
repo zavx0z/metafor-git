@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-commit-tree", { desc: "Git commit-tree — 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

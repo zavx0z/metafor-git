@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-diff-files", { desc: "Git diff-files — к
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

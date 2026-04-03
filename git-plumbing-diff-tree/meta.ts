@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-diff-tree", { desc: "Git diff-tree — ко
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

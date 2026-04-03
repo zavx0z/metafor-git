@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-check-mailmap", { desc: "Git check-mailmap 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

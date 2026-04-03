@@ -7,7 +7,7 @@ export default MetaFor("git-config", { desc: "Git config — конфигура�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter(({ value, html }) => html`
       <meta-for src="zavx0z/git-config-${value.operation}" fields=${{ args: value.args }} />

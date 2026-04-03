@@ -6,7 +6,7 @@ export default MetaFor("git-examine-diff", { desc: "Git diff — команда 
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

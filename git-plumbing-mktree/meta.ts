@@ -6,7 +6,7 @@ export default MetaFor("git-plumbing-mktree", { desc: "Git mktree — коман
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()

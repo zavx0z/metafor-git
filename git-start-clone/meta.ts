@@ -6,7 +6,7 @@ export default MetaFor("git-start-clone", { desc: "Git start-clone — кома�
   }))
   .superposition({})
   .mass({})
-  .processes(() => ({}))
+  .processes(() => [])
   .reactions(() => [])
   .matter()
   .bulk()
