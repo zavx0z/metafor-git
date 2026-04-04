@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-worktree", { desc: "Git worktree — управление рабочими деревьями" })
   .fields((field) => ({
     operation: field.enum("worktree").optional({ label: "Тип операции" }),

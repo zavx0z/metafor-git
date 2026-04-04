@@ -4,10 +4,6 @@
   "description": "Git rm — удаление файлов",
   "type": "module",
   "private": true,
-  "devDependencies": {
-    "@metafor/dsl": "workspace:*",
-    "@metafor/ast": "workspace:*"
-  },
   "scripts": {
     "build": "metafor-build meta.ts --out meta.json"
   }

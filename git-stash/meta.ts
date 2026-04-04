@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-stash", { desc: "Git stash — отложенные изменения" })
   .fields((field) => ({
     operation: field.enum("stash").optional({ label: "Тип операции" }),

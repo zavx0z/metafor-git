@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-collaborate", { desc: "Git collaborate — команды совместной работы (fetch, pull, push, remote)" })
   .fields((field) => ({
     operation: field.enum("fetch", "pull", "push", "remote").optional({ label: "Тип операции" }),

@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-plumbing", { desc: "Git plumbing — низкоуровневые команды" })
   .fields((field) => ({
     operation: field.enum(

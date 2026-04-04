@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-plumbing-diff-files", { desc: "Git diff-files — команда git" })
   .fields((field) => ({
     error: field.string.optional({ label: "Ошибка" }),

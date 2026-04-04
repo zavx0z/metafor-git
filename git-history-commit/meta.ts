@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-history-commit", { desc: "Git commit — создание коммита" })
   .fields((field) => ({
     args: field.string.optional({ label: "Аргументы" }),

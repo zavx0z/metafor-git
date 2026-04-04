@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-work", { desc: "Git work — команды работы с индексом и рабочим деревом" })
   .fields((field) => ({
     operation: field.enum("add", "clean", "mv", "restore", "rm", "sparse-checkout").optional({ label: "Тип операции" }),

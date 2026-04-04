@@ -1,5 +1,3 @@
-import { MetaFor } from "@metafor/dsl"
-
 export default MetaFor("git-plumbing-fsck", { desc: "Git fsck — команда git" })
   .fields((field) => ({
     error: field.string.optional({ label: "Ошибка" }),
