@@ -1,7 +1,18 @@
 export default MetaFor("git", { desc: "Git — распределённая система управления версиями" })
   .fields((field) => ({
     operation: field
-      .enum("start", "work", "examine", "history", "collaborate", "worktree", "stash", "submodule", "config", "plumbing")
+      .enum(
+        "start",
+        "work",
+        "examine",
+        "history",
+        "collaborate",
+        "worktree",
+        "stash",
+        "submodule",
+        "config",
+        "plumbing",
+      )
       .optional({ label: "Тип операции" }),
     error: field.string.optional({ label: "Ошибка" }),
     command: field.string.optional({ label: "Команда" }),
@@ -27,9 +38,9 @@ export default MetaFor("git", { desc: "Git — распределённая си
     process("определение операции", { env: ["any"] })
       .action(async ({ value }) => {
         const { detect } = await import("./actions/detect")
-        return detect(value.command)
+        return detect({ cmd: value.command })
       })
-      .success(({ update, data }) => update(data))
+      .success(({ update, data }) => update({ args: data.args, operation: data.operation }))
       .error(({ update, error }) => update({ error: error.message })),
   ])
   .reactions(() => [])
@@ -40,16 +51,14 @@ export default MetaFor("git", { desc: "Git — распределённая си
         fields=${{
           operation: value.operation,
           args: value.args,
-        }}
-      />
+        }} />
       ${state === "ошибка" &&
       html`
         <meta-for
           src="zavx0z/git-error"
           fields=${{
             message: value.error,
-          }}
-        />
+          }} />
       `}
     `,
   )

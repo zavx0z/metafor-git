@@ -5,6 +5,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "metafor-build meta.ts --out meta.json"
+    "test:actions": "bun test"
+  },
+  "devDependencies": {
+    "create-metafor": "workspace:*"
   }
 }
