@@ -14,7 +14,7 @@ describe("meta", () => {
   })
 
   test("преобразование в sqlite db", () => {
-    relation(db, meta)
+    relation(db, meta, "zavx0z/git")
     expect(true).toBe(true)
   })
 })
