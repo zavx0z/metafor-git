@@ -94,6 +94,19 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
         const mod = await import("./actions/commit")
         return mod.parseCommitOptions(value.args)
       })
+      .success(({ update, data }) =>
+        update({
+          all: data.all ?? null,
+          message: data.message ?? null,
+          amend: data.amend ?? null,
+          signoff: data.signoff ?? null,
+          noVerify: data.noVerify ?? null,
+          dryRun: data.dryRun ?? null,
+          verbose: data.verbose ?? null,
+          edit: data.edit ?? null,
+          error: null,
+          dryRunOutput: null,
+        }))
       .error(({ update, error }) => update({ error: error.message })),
 
     process("коммит с сообщением", {
@@ -102,7 +115,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: `git commit -m ${JSON.stringify(value.message)}`, mode: "commit" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "-m", String(value.message)],
+          mode: "commit",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -112,7 +128,7 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async () => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: "git commit -a", mode: "commit" })
+        return mod.runCommitCommand({ args: ["git", "commit", "-a"], mode: "commit" })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -122,7 +138,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async () => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: "git commit --amend --no-edit", mode: "amend" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "--amend", "--no-edit"],
+          mode: "amend",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -133,7 +152,7 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
         return mod.runCommitCommand({
-          command: value.message ? `git commit -s -m ${JSON.stringify(value.message)}` : "git commit -s",
+          args: ["git", "commit", "-s", ...(value.message ? ["-m", String(value.message)] : [])],
           mode: "commit",
         })
       })
@@ -146,7 +165,7 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
         return mod.runCommitCommand({
-          command: value.message ? `git commit -n -m ${JSON.stringify(value.message)}` : "git commit -n",
+          args: ["git", "commit", "-n", ...(value.message ? ["-m", String(value.message)] : [])],
           mode: "commit",
         })
       })
@@ -159,10 +178,11 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
         return mod.runCommitCommand({
-          command: value.message ? `git commit --dry-run -m ${JSON.stringify(value.message)}` : "git commit --dry-run",
+          args: ["git", "commit", "--dry-run", ...(value.message ? ["-m", String(value.message)] : [])],
           mode: "dry-run",
         })
       })
+      .success(({ update, data }) => update({ dryRunOutput: typeof data === "string" && data.length > 0 ? data : null }))
       .error(({ update, error }) => update({ error: error.message })),
 
     process("коммит с редактором", {
@@ -171,7 +191,7 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async () => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: "git commit -e", mode: "commit" })
+        return mod.runCommitCommand({ args: ["git", "commit", "-e"], mode: "commit" })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -181,7 +201,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: `git commit -a -m ${JSON.stringify(value.message)}`, mode: "commit" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "-a", "-m", String(value.message)],
+          mode: "commit",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -191,7 +214,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: `git commit --amend -m ${JSON.stringify(value.message)}`, mode: "amend" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "--amend", "-m", String(value.message)],
+          mode: "amend",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -201,7 +227,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: `git commit -s -m ${JSON.stringify(value.message)}`, mode: "commit" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "-s", "-m", String(value.message)],
+          mode: "commit",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -211,7 +240,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async () => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: "git commit --amend -s --no-edit", mode: "amend" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "--amend", "-s", "--no-edit"],
+          mode: "amend",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 
@@ -221,7 +253,10 @@ export default MetaFor("git-history-commit", { desc: "Git commit — созда�
     })
       .action(async ({ value }) => {
         const mod = await import("./actions/commit")
-        return mod.runCommitCommand({ command: `git commit --amend -s -m ${JSON.stringify(value.message)}`, mode: "amend" })
+        return mod.runCommitCommand({
+          args: ["git", "commit", "--amend", "-s", "-m", String(value.message)],
+          mode: "amend",
+        })
       })
       .error(({ update, error }) => update({ error: error.message })),
 

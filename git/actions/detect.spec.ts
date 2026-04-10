@@ -82,6 +82,14 @@ describe("detect", () => {
     })
   })
 
+  test("должен понимать полный git CLI input с префиксом git", () => {
+    const result = detect({ cmd: 'git commit -m "Initial commit"' })
+    expect(result).toEqual({
+      operation: "history",
+      args: '-m "Initial commit"',
+    })
+  })
+
   test("должен выбрасывать ошибку для неизвестной команды", () => {
     expect(() => detect({ cmd: "unknown-command --flag" })).toThrow("Неизвестная команда: unknown-command")
   })

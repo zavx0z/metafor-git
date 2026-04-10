@@ -13,7 +13,16 @@ const patterns = {
 } as Record<string, RegExp>
 
 export function detect({ cmd }: In): Out {
-  const [command, ...parts] = cmd.split(" ")
+  const tokens = cmd
+    .trim()
+    .split(/\s+/)
+    .filter((token) => token.length > 0)
+
+  if (tokens[0] === "git") {
+    tokens.shift()
+  }
+
+  const [command, ...parts] = tokens
 
   if (!command) throw new Error("Не удалось извлечь команду")
 
