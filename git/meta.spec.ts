@@ -2,7 +2,7 @@ import { describe, test, expect, afterAll, beforeAll } from "bun:test"
 import { createMetaforSqliteFixture } from "create-metafor/fixture"
 import meta from "./meta"
 import type { Database } from "bun:sqlite"
-import {relation} from "@pkg/sqlite"
+import { relation } from "@store/meta/sqlite"
 
 describe("meta", () => {
   let db: Database
