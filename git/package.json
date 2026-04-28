@@ -8,7 +8,7 @@
     "test:actions": "bun test"
   },
   "devDependencies": {
-    "@store/meta": "workspace:*",
+    "@surface/meta": "workspace:*",
     "create-metafor": "workspace:*"
   }
 }
