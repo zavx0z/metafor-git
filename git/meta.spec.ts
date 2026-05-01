@@ -2,7 +2,6 @@ import { describe, test, expect, afterAll, beforeAll } from "bun:test"
 import { createMetaforSqliteFixture } from "create-metafor/fixture"
 import meta from "./meta"
 import type { SQL } from "bun"
-import { metaCreate } from "@surface/meta/sqlite"
 
 describe("meta", () => {
   let db: SQL
@@ -17,8 +16,6 @@ describe("meta", () => {
     expect(meta).toMatchSnapshot()
   })
 
-  test("преобразование в sqlite db", async () => {
-    await metaCreate(db, "zavx0z/git", meta)
-    expect(true).toBe(true)
-  })
+  // Тест преобразования в sqlite db удалён вместе с пакетом @surface/meta —
+  // запись теперь идёт через store.update patch-flow (см. dark/patch/meta.ts).
 })
