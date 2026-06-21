@@ -1,0 +1,14 @@
+{
+  "name": "@zavx0z/full-screen",
+  "version": "0.1.0",
+  "description": "Full-screen — переключатель полного экрана браузера",
+  "author": "zavx0z",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/meta.ts"
+  },
+  "scripts": {
+    "build": "bun build src/meta.ts --outdir dist --target browser --format=esm"
+  }
+}
