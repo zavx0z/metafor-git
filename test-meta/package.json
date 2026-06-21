@@ -1,7 +1,7 @@
 {
-  "name": "@zavx0z/full-screen",
+  "name": "@zavx0z/test-meta",
   "version": "0.1.0",
-  "description": "Full-screen — переключатель полного экрана браузера",
+  "description": "Test Meta",
   "author": "zavx0z",
   "type": "module",
   "private": true,
