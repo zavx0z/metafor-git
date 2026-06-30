@@ -1,7 +1,7 @@
 {
-  "name": "@zavx0z/full-screen",
+  "name": "@zavx0z/codex",
   "version": "0.1.0",
-  "description": "Full-screen — переключатель полного экрана браузера",
+  "description": "Codex — исполнитель внутри tmux",
   "author": "zavx0z",
   "type": "module",
   "private": true,

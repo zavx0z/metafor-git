@@ -1,0 +1,18 @@
+{
+  "name": "@zavx0z/linux",
+  "version": "0.1.0",
+  "description": "Linux — рабочая среда",
+  "author": "zavx0z",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/meta.ts"
+  },
+  "scripts": {
+    "build": "bun build src/meta.ts --outdir dist --target browser --format=esm"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "@types/node": "^25.5.0"
+  }
+}
